@@ -13,7 +13,7 @@
         <header class="site-header">
             <nav class="top-nav">
                 <ul class="nav-links">
-                    <li><a href="#objetivos">OBJETIVOS</a></li>
+                    <li><a href="#problema">PROBLEMA E HIPÓTESIS</a></li>
                     <li><a href="#referencias">REFERENCIAS</a></li>
                     <li><a href="#conclusiones">CONCLUSIONES</a></li>
                 </ul>
@@ -48,8 +48,8 @@
         <!-- Contenido Principal (Tarjetas estilo Blog) -->
         <main class="blog-container">
             
-            <!-- Tarjeta 1: Objetivos -->
-            <article class="blog-card" id="objetivos">
+            <!-- Tarjeta 1: Objetivos y Pregunta Problema -->
+            <article class="blog-card" id="problema">
                 <div class="card-image-wrapper">
                     <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Familia interactuando">
                 </div>
@@ -77,7 +77,36 @@
                 </div>
             </article>
 
-            <!-- Tarjeta 2: Justificación y Marco Referencial -->
+            <!-- Tarjeta 2: Hipótesis -->
+            <article class="blog-card" id="hipotesis">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jóvenes conectados">
+                </div>
+                <div class="card-content">
+                    <div class="card-meta">
+                        <span class="author-avatar">👤</span>
+                        <div class="meta-info">
+                            <span class="author-name">Investigador</span>
+                            <span class="post-date">5/11/2026 • 2 min de lectura</span>
+                        </div>
+                    </div>
+                    <h3>HIPÓTESIS DE LA INVESTIGACIÓN</h3>
+                    <div class="card-excerpt">
+                        Actualmente en el año 2026, los estudiantes de grado 8° y 9° de la institución educativa la floresta, suelen utilizar las redes sociales en su cotidianidad, estando presentes como una forma habitual para comunicarse y conectar con sus compañeros del colegio y en un entorno digital. <br><br>
+                        En este sentido, la comunicación y las costumbres familiares son la base con la que crecieron los estudiantes en sus hogares, donde existen distintas formas de hablar, hábitos y momentos de convivencia que han formado parte de su vida diaria junto a las personas con las que conviven. <br><br>
+                        Por consiguiente, la presencia de redes sociales digitales como Instagram y TikTok ha ampliado la información a la que acceden los estudiantes y sus maneras de conectarse, siendo un espacio donde comparten vivencias, se expresan de forma habitual y acceden a diversos contenidos de manera rápida y eficaz. <br><br>
+                        De este modo, se plantea que existe una relación entre el uso de Instagram y TikTok con la comunicación y costumbres familiares de los estudiantes de grado 8º y 9º del año 2026 de la institución educativa la floresta, de manera que la relación de estas variables es una relación de cambio.
+                    </div>
+                    <div class="card-footer">
+                        <span class="views">1.9K visualizaciones</span>
+                        <button class="like-btn" onclick="toggleLike(this)">
+                            <span class="like-count">58</span> <span class="heart-icon">♡</span>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3: Justificación y Marco Referencial -->
             <article class="blog-card" id="referencias">
                 <div class="card-image-wrapper">
                     <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pantalla de smartphone">
@@ -111,7 +140,7 @@
                 </div>
             </article>
 
-            <!-- Tarjeta 3: Conclusión Objetivo General -->
+            <!-- Tarjeta 4: Conclusión Objetivo General -->
             <article class="blog-card" id="conclusion1">
                 <div class="card-image-wrapper">
                     <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Estudiantes">
@@ -137,7 +166,7 @@
                 </div>
             </article>
 
-            <!-- Tarjeta 4: Conclusiones Objetivos Específicos -->
+            <!-- Tarjeta 5: Conclusiones Objetivos Específicos -->
             <article class="blog-card" id="conclusiones">
                 <div class="card-image-wrapper">
                     <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Trabajo en equipo">
@@ -169,25 +198,4 @@
         </main>
     </div>
 
-    <!-- Script para funcionalidad de Me Gusta -->
-    <script>
-        function toggleLike(button) {
-            const countSpan = button.querySelector('.like-count');
-            const iconSpan = button.querySelector('.heart-icon');
-            let count = parseInt(countSpan.textContent);
-
-            button.classList.toggle('liked');
-
-            if (button.classList.contains('liked')) {
-                count += 1;
-                iconSpan.textContent = '♥';
-            } else {
-                count -= 1;
-                iconSpan.textContent = '♡';
-            }
-            
-            countSpan.textContent = count;
-        }
-    </script>
-</body>
-</html>
+    <!-- Script para funcionalidad
