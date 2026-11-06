@@ -1,5 +1,5 @@
 /* ==========================================================================
-   css/tesis.css - Blog Minimalista Interactivo
+   css/tesis.css - Blog Minimalista Estilo "EL PIMENTÓN"
    ========================================================================== */
 
 :root {
@@ -89,6 +89,7 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: var(--text-dark);
+    cursor: pointer;
 }
 
 /* Sección Hero */
@@ -163,11 +164,12 @@ body {
 
 .blog-card {
     display: flex;
-    width: 85%;
+    width: 90%; 
     border: 1px solid var(--border-color);
     background-color: #fff;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
+    align-items: stretch;
 }
 
 .blog-card:hover {
@@ -175,7 +177,7 @@ body {
 }
 
 .card-image-wrapper {
-    flex: 0 0 40%; 
+    flex: 0 0 35%; 
 }
 
 .card-image-wrapper img {
@@ -229,7 +231,7 @@ body {
 
 .card-content h3 {
     font-family: var(--font-heading);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 0 15px 0;
     font-weight: 700;
     line-height: 1.3;
@@ -299,6 +301,10 @@ body {
         width: 100%;
     }
 
+    .card-image-wrapper {
+        height: 250px;
+    }
+}
     .card-image-wrapper {
         height: 250px;
     }
