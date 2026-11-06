@@ -72,15 +72,14 @@
                         Por consiguiente, la presencia de redes sociales digitales como Instagram y TikTok ha ampliado la información a la que acceden los estudiantes y sus maneras de conectarse, siendo un espacio donde comparten vivencias, se expresan de forma habitual y acceden a diversos contenidos de manera rápida y eficaz. <br><br>
                         De este modo, se plantea que existe una relación entre el uso de Instagram y TikTok con la comunicación y costumbres familiares de los estudiantes de grado 8º y 9º del año 2026 de la institución educativa la floresta, de manera que la relación de estas variables es una relación de cambio.
                     </div>
-                    <div class="card-footer">
-                        <span class="views">1.9K visualizaciones</span>
+                 <div class="card-footer">
+                        <span class="views">2.2K visualizaciones</span>
                         <button class="like-btn" onclick="toggleLike(this)">
-                            <span class="like-count">58</span> <span class="heart-icon">♡</span>
+                            <span class="like-count">45</span> <span class="heart-icon">♡</span>
                         </button>
                     </div>
                 </div>
             </article>
-            
             <!-- Tarjeta 1: Objetivos y Pregunta Problema -->
             <article class="blog-card" id="problema">
                 <div class="card-image-wrapper">
@@ -101,10 +100,10 @@
                         2.2.3 interpretar los resultados de las entrevistas a miembros de la institución educativa la foresta para recolectar información cualitativa sobre las percepciones observadas en torno al uso de redes sociales y la convivencia familiar. <br><br>
                         2.2.4 analizar la relación entre las entrevistas a los miembros de la institución educativa la floresta y las fuentes teóricas, para identificar las coincidencias y desacuerdos entre el uso de Instagram y tiktok con la comunicación y costumbres familiares
                     </div>
-                    <div class="card-footer">
-                        <span class="views">2.2K visualizaciones</span>
+                   <div class="card-footer">
+                        <span class="views">1.5K visualizaciones</span>
                         <button class="like-btn" onclick="toggleLike(this)">
-                            <span class="like-count">45</span> <span class="heart-icon">♡</span>
+                            <span class="like-count">32</span> <span class="heart-icon">♡</span>
                         </button>
                     </div>
                 </div>
@@ -135,9 +134,9 @@
                         Justificación: Este ensayo analiza cómo la identidad de las personas se construye a través de la interacción y el lenguaje que se interpreta de las demás personas, sirviendo en la tesis para respaldar teóricamente cómo las primeras relaciones en el hogar y en la sociedad moldean la forma en que los estudiantes se entienden a sí mismos y se comunican diariamente. (ficha 7)
                     </div>
                     <div class="card-footer">
-                        <span class="views">1.5K visualizaciones</span>
+                        <span class="views">3.8K visualizaciones</span>
                         <button class="like-btn" onclick="toggleLike(this)">
-                            <span class="like-count">32</span> <span class="heart-icon">♡</span>
+                            <span class="like-count">89</span> <span class="heart-icon">♡</span>
                         </button>
                     </div>
                 </div>
@@ -190,15 +189,36 @@
                         7.2.4 Al comparar las entrevistas con las fuentes teóricas se vio que hay muchas coincidencias. Tanto los autores como los docentes dicen que la identidad y las costumbres se van construyendo con lo que se vive, que las redes influyen en la manera de hablar y de actuar de los jóvenes, y que los padres tienen un papel importante en acompañarlos. También hubo algunas diferencias. Por ejemplo, unos docentes piensan que la presión por encajar viene de las redes, mientras que otro piensa que viene de la naturaleza de ser adolescente, y no todos coinciden en cuánto se pierde de las costumbres y cuánto solo se transforma. Estas diferencias no cambian el resultado, sino que muestran que el tema es complejo y que cada persona lo ve desde su propia experiencia.
                     </div>
                     <div class="card-footer">
-                        <span class="views">4.1K visualizaciones</span>
+                        <span class="views">9.5K visualizaciones</span>
                         <button class="like-btn" onclick="toggleLike(this)">
-                            <span class="like-count">112</span> <span class="heart-icon">♡</span>
+                            <span class="like-count">202</span> <span class="heart-icon">♡</span>
                         </button>
                     </div>
                 </div>
             </article>
 
-        </main>
+      </main>
     </div>
 
-    <!-- Script para funcionalidad
+    <!-- Script para funcionalidad de Me Gusta -->
+    <script>
+        function toggleLike(button) {
+            const countSpan = button.querySelector('.like-count');
+            const iconSpan = button.querySelector('.heart-icon');
+            let count = parseInt(countSpan.textContent);
+
+            button.classList.toggle('liked');
+
+            if (button.classList.contains('liked')) {
+                count += 1;
+                iconSpan.textContent = '♥';
+            } else {
+                count -= 1;
+                iconSpan.textContent = '♡';
+            }
+            
+            countSpan.textContent = count;
+        }
+    </script>
+</body>
+</html>
